@@ -8,5 +8,6 @@
   },
   "emmet.includeLanguages": {
     "templ": "html"
-  }
+  },
+  "alpine-intellisense.settings.languageScopes": "html,templ"
 }

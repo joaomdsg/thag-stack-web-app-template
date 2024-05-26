@@ -6,10 +6,17 @@ templ Page() {
 		<script defer src="/public/js/alpine.min.js"></script>
 		<script defer src="/public/js/htmx.min.js"></script>
 	</head>
-	<body>
-		<h1 class="text-4xl text-cyan-600">Test SSE for hot page reloads!</h1>
+	<body class="m-4">
+		<h1 class="text-2xl text-sky-600">THAG stack development with hot page reloads!</h1>
 		<div x-data="{ title: 'Start Here', count: 0 }">
 			<h1 x-text="title"></h1>
+			<button
+				class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-md"
+				@click="count++"
+			>
+				Click me!
+				<span x-text="count" class="ml-2"></span>
+			</button>
 		</div>
 	</body>
 }

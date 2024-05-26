@@ -22,5 +22,5 @@ go.work
 
 # Other
 tmp/
-dev/
+dev/*/
 *_templ.go

@@ -1,7 +1,7 @@
 # THAG Stack Webapp Template (TailwindCSS + HTMX + Alpine.js + Go)
 A Web application template to show off the THAG Stack.
 
-## Setup
+## Development Setup
 
 ### 1. Install Golang v1.22 or greater
 
@@ -13,7 +13,7 @@ Air makes it easy do develop Go applications by automatically recompiling on cod
 
 To install it do the following:
 
-1. Create a directory named `air` that should be inside another directory named `dev`:
+1. Create a directory named `air` within the `dev` directory:
     ```
     mkdir -p ./dev/air
     ```
@@ -37,7 +37,7 @@ To install it do the following:
 
 To install it do the following:
 
-1. Create a directory named `templ` that should be inside another directory named `dev`:
+1. Create a directory named `templ` within the `dev` directory:
     ```
     mkdir -p ./dev/templ
     ```
@@ -64,7 +64,7 @@ TailwindCSS allows for modern and beautiful web UIs without leaving the HTML.
 
 To install it do the following:
 
-1. Create a directory named `tailwindcss` that should be inside another directory named `dev`:
+1. Create a directory named `tailwindcss` within the `dev` directory:
     ```
     mkdir -p ./dev/tailwindcss
     ```
@@ -80,7 +80,30 @@ To install it do the following:
     chmod +x ./dev/tailwindcss/bin
     ```
 
-## Development
+### 5. Setup IDE for development
+
+While it's not strictly necessary, adding intellisense support for `HTMX`, `Templ`, `TailwindCSS` and `Alpine.js` in your prefered IDE (if avaliable), will result in a much richer development experience.
+
+For the best development experience it is recomended to use a `Linux` or `MacOS` operatin system and [VSCode](https://code.visualstudio.com) or [VSCodium - Open version of VSCode](https://vscodium.com/) as the IDE.
+
+Here is a list of extencions for VSCode/VSCodium recommended for this project:
+- [Go](https://marketplace.visualstudio.com/items?itemName=golang.go)
+- [templ-vscode](https://marketplace.visualstudio.com/items?itemName=a-h.templ)
+- [HTMX Attributes](https://marketplace.visualstudio.com/items?itemName=CraigRBroughton.htmx-attributes)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+- [Alpine.js IntelliSense](https://marketplace.visualstudio.com/items?itemName=adrianwilczynski.alpine-js-intellisense)
+
+
+On VSCodium some extensions are not avaliable by default on the extensions tab (`Alpine.js IntelliSense` for examle), but they can still be installed manually. 
+
+To manually install an extension on VSCodium, search for it on [VSCode Marketplace](https://marketplace.visualstudio.com) and look the download link for the latest version. After the `vsix` extension file finishes downloading, install it by running:
+```
+codium --install-extension extension_file_name.vsix
+
+# replace 'extension_file_name' for the actual file name of the extension
+```
+
+## Development mode
 
 Start the app in development mode by running:
 ```
