@@ -3,6 +3,8 @@ A Web application template to show off the THAG Stack.
 
 ## Development Setup
 
+For the best development experience it is recomended to use a `Linux` or `MacOS` operating system and [VSCode](https://code.visualstudio.com) or [VSCodium - Open version of VSCode](https://vscodium.com/) as the IDE.
+
 ### 1. Install Golang v1.22 or greater
 
 Follow the instalation instructions [here](https://go.dev/doc/install).
@@ -83,8 +85,6 @@ To install it do the following:
 ### 5. Setup IDE for development
 
 While it's not strictly necessary, adding intellisense support for `HTMX`, `Templ`, `TailwindCSS` and `Alpine.js` in your prefered IDE (if avaliable), will result in a much richer development experience.
-
-For the best development experience it is recomended to use a `Linux` or `MacOS` operatin system and [VSCode](https://code.visualstudio.com) or [VSCodium - Open version of VSCode](https://vscodium.com/) as the IDE.
 
 Here is a list of extencions for VSCode/VSCodium recommended for this project:
 - [Go](https://marketplace.visualstudio.com/items?itemName=golang.go)

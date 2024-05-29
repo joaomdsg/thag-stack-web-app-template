@@ -2,6 +2,8 @@ package main
 
 import (
 	"embed"
+	"io/fs"
+	"log"
 	"net/http"
 
 	"github.com/joaomdsg/thag-stack-web-app-template/platform/router"
@@ -11,6 +13,10 @@ import (
 var content embed.FS
 
 func main() {
-	r := router.New(content)
+	publicDirContent, err := fs.Sub(content, "web")
+	if err != nil {
+		log.Fatal(err)
+	}
+	r := router.New(publicDirContent)
 	http.ListenAndServe(":3000", r)
 }

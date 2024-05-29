@@ -1,22 +1,20 @@
 package home
 
+import "github.com/joaomdsg/thag-stack-web-app-template/web/components"
+
 templ Page() {
 	<head>
 		<link rel="stylesheet" href="/public/css/main.css"/>
 		<script defer src="/public/js/alpine.min.js"></script>
 		<script defer src="/public/js/htmx.min.js"></script>
 	</head>
-	<body class="m-4">
-		<h1 class="text-2xl text-sky-600">THAG stack development with hot page reloads!</h1>
-		<div x-data="{ title: 'Start Here', count: 0 }">
-			<h1 x-text="title"></h1>
-			<button
-				class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-md"
-				@click="count++"
-			>
-				Click me!
-				<span x-text="count" class="ml-2"></span>
-			</button>
+	<body class="m-4 bg-neutral-100">
+		<h1 class="text-2xl text-sky-600 text-center">THAG stack development with hot page reloads!</h1>
+		<div class="w-full max-w-xs mx-auto mt-6">
+			@components.Loginform(components.LoginFormModel{})
+			<p class="text-center text-gray-500 text-xs">
+				&copy;2020 Acme Corp. All rights reserved.
+			</p>
 		</div>
 	</body>
 }
